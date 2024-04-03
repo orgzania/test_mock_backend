@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # In-memory data store (replace with a database for persistence)
 tasks = {1: {"id": 1, "position": 1, "category": "Shopping", "title": "Grocery Shopping", "status": "pending", "description": "Go to Trader Joe's and get 6 eggs, 1 gal milk, 1 bread"},
