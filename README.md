@@ -1,9 +1,10 @@
 # Mock Task Management API
 
 1. fork the project directiory
-2. activate venv
+2. activate venv and install dependencies
    -  windows: \venv\Scripts\activate
    -  linux: source venv/bin/activate
+   -  pip3 install -r requirements.txt
 3. execute python app.py or python3 app.py
 
 ## Get a list of all tasks on http://localhost:8000/tasks
