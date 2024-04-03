@@ -3,8 +3,8 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 # In-memory data store (replace with a database for persistence)
-tasks = {1: {"id": 1, "position": 1, "category": "Shopping", "title": "Grocery Shopping", "description": "Go to Trader Joe's and get 6 eggs, 1 gal milk, 1 bread"},
-         2: {"id": 2, "position": 2, "category": "Work", "title": "Feature Deadline - Slackbot", "description": "Create a Slackbot to pull all Jira tasks and post in the team's channel"}}
+tasks = {1: {"id": 1, "position": 1, "category": "Shopping", "title": "Grocery Shopping", "status": "pending", "description": "Go to Trader Joe's and get 6 eggs, 1 gal milk, 1 bread"},
+         2: {"id": 2, "position": 2, "category": "Work", "title": "Feature Deadline - Slackbot", "status": "pending", "description": "Create a Slackbot to pull all Jira tasks and post in the team's channel"}}
 next_id = 2  # Track the next available ID for tasks
 
 # Function to generate a unique ID
